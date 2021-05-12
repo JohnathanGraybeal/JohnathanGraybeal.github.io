@@ -1,334 +1,385 @@
 $theme:slateblue;
-body{
+
+body {
     justify-content: space-around;
     align-items: center;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+
 }
 
 
 
 
-.name{
-     width: 50%;
+.name {
+    width: 50%;
     position: relative;
     height: 50px;
     overflow: hidden;
-    input{
-    width: 100%;
-    height: 100%;
-    color: $theme;
-    padding-top: 20px;
-    border:none;
-    outline: none;
+
+    input {
+        width: 100%;
+        height: 100%;
+        color: $theme;
+        padding-top: 20px;
+        border: none;
+        outline: none;
     }
-    
-    label{
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    pointer-events: none;
-    border-bottom: 1px solid black;
+
+    label {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+        border-bottom: 1px solid black;
     }
-    
-    label::after{
-    content: "";
-    position: absolute;
-    left: 0px;
-    bottom: -1px;
-    height: 100%;
-    width: 100%;
-    border-bottom: 3px solid $theme;
-    transform: translate(-100%);
+
+    label::after {
+        content: "";
+        position: absolute;
+        left: 0px;
+        bottom: -1px;
+        height: 100%;
+        width: 100%;
+        border-bottom: 3px solid $theme;
+        transform: translate(-100%);
     }
-    
-    input:focus + .label-name .content-name, input:valid + .label-name .content-name{
-    transform: translateY(-150%);
-    font-size: 14px;
-    color:$theme;
+
+    input:focus+.label-name .content-name,
+    input:valid+.label-name .content-name {
+        transform: translateY(-150%);
+        font-size: 14px;
+        color: $theme;
     }
-    
-    input:focus + .label-name::after,  input:valid + .label-name::after{
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
-}
-    
-    .content-name{
-    position: absolute;
-    bottom: 5px;
-    left: 0px;
-    transition: all 0.3s ease;
-}
+
+    input:focus+.label-name::after,
+    input:valid+.label-name::after {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    .content-name {
+        position: absolute;
+        bottom: 5px;
+        left: 0px;
+        transition: all 0.3s ease;
+    }
 
 }
 
-.email{
-     width: 50%;
+//end name
+
+.email {
+    width: 50%;
     position: relative;
     margin-top: 5px;
     height: 50px;
     overflow: hidden;
-     
-  input{
-    width: 100%;
-    height: 100%;
-    color: $theme;
-    padding-top: 20px;
-    border:none;
-    outline: none;
+
+    input {
+        width: 100%;
+        height: 100%;
+        color: $theme;
+        padding-top: 20px;
+        border: none;
+        outline: none;
     }
-    label{
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    pointer-events: none;
-    border-bottom: 1px solid black;
+
+    label {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+        border-bottom: 1px solid black;
     }
-    label::after{
-    content: "";
-    position: absolute;
-    left: 0px;
-    bottom: -1px;
-    height: 100%;
-    width: 100%;
-    border-bottom: 3px solid $theme;
-    transform: translate(-100%);
+
+    label::after {
+        content: "";
+        position: absolute;
+        left: 0px;
+        bottom: -1px;
+        height: 100%;
+        width: 100%;
+        border-bottom: 3px solid $theme;
+        transform: translate(-100%);
     }
-    input:focus + .label-name .content-name, input:valid + .label-name .content-name{
-    transform: translateY(-150%);
-    font-size: 14px;
-    color:$theme;
+
+    input:focus+.label-name .content-name,
+    input:valid+.label-name .content-name {
+        transform: translateY(-150%);
+        font-size: 14px;
+        color: $theme;
     }
-    
-    input:focus + .label-name::after,  input:valid + .label-name::after{
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
-}
-    
-        .content-name{
-    position: absolute;
-    bottom: 5px;
-    left: 0px;
-    transition: all 0.3s ease;
-}
-    
+
+    input:focus+.label-name::after,
+    input:valid+.label-name::after {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    .content-name {
+        position: absolute;
+        bottom: 5px;
+        left: 0px;
+        transition: all 0.3s ease;
+    }
+
 }
 
-.company{
-     width: 50%;
+//end email
+
+.company {
+    width: 50%;
     position: relative;
-     margin-top: 5px;
+    margin-top: 5px;
     height: 50px;
     overflow: hidden;
-    input{
-    width: 100%;
-    height: 100%;
-    color: $theme;
-    padding-top: 20px;
-    border:none;
-    outline: none;
+
+    input {
+        width: 100%;
+        height: 100%;
+        color: $theme;
+        padding-top: 20px;
+        border: none;
+        outline: none;
     }
-    
-    label{
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    pointer-events: none;
-    border-bottom: 1px solid black;
+
+    label {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+        border-bottom: 1px solid black;
     }
-    
-    label::after{
-    content: "";
-    position: absolute;
-    left: 0px;
-    bottom: -1px;
-    height: 100%;
-    width: 100%;
-    border-bottom: 3px solid $theme;
-    transform: translate(-100%);
+
+    label::after {
+        content: "";
+        position: absolute;
+        left: 0px;
+        bottom: -1px;
+        height: 100%;
+        width: 100%;
+        border-bottom: 3px solid $theme;
+        transform: translate(-100%);
     }
-    
-    input:focus + .label-name .content-name, input:valid + .label-name .content-name{
-    transform: translateY(-150%);
-    font-size: 14px;
-    color:$theme;
+
+    input:focus+.label-name .content-name,
+    input:valid+.label-name .content-name {
+        transform: translateY(-150%);
+        font-size: 14px;
+        color: $theme;
     }
-    
-    input:focus + .label-name::after,  input:valid + .label-name::after{
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
-}
-    
-    .content-name{
-    position: absolute;
-    bottom: 5px;
-    left: 0px;
-    transition: all 0.3s ease;
-}
+
+    input:focus+.label-name::after,
+    input:valid+.label-name::after {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    .content-name {
+        position: absolute;
+        bottom: 5px;
+        left: 0px;
+        transition: all 0.3s ease;
+    }
 
 }
 
-.role{
-     width: 50%;
+//end company
+
+.role {
+    width: 50%;
     position: relative;
-     margin-top: 5px;
+    margin-top: 5px;
     height: 50px;
     overflow: hidden;
-    input{
-    width: 100%;
-    height: 100%;
-    color: $theme;
-    padding-top: 20px;
-    border:none;
-    outline: none;
+
+    input {
+        width: 100%;
+        height: 100%;
+        color: $theme;
+        padding-top: 20px;
+        border: none;
+        outline: none;
     }
-    
-    label{
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    pointer-events: none;
-    border-bottom: 1px solid black;
+
+    label {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+        border-bottom: 1px solid black;
     }
-    
-    label::after{
-    content: "";
-    position: absolute;
-    left: 0px;
-    bottom: -1px;
-    height: 100%;
-    width: 100%;
-    border-bottom: 3px solid $theme;
-    transform: translate(-100%);
+
+    label::after {
+        content: "";
+        position: absolute;
+        left: 0px;
+        bottom: -1px;
+        height: 100%;
+        width: 100%;
+        border-bottom: 3px solid $theme;
+        transform: translate(-100%);
     }
-    
-    input:focus + .label-name .content-name, input:valid + .label-name .content-name{
-    transform: translateY(-150%);
-    font-size: 14px;
-    color:$theme;
+
+    input:focus+.label-name .content-name,
+    input:valid+.label-name .content-name {
+        transform: translateY(-150%);
+        font-size: 14px;
+        color: $theme;
     }
-    
-    input:focus + .label-name::after,  input:valid + .label-name::after{
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
-}
-    
-    .content-name{
-    position: absolute;
-    bottom: 5px;
-    left: 0px;
-    transition: all 0.3s ease;
-}
+
+    input:focus+.label-name::after,
+    input:valid+.label-name::after {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    .content-name {
+        position: absolute;
+        bottom: 5px;
+        left: 0px;
+        transition: all 0.3s ease;
+    }
 }
 
-.message{
-     width: 50%;
+//end role
+
+.message {
+    width: 50%;
     position: relative;
-     margin-top: 5px;
+    margin-top: 5px;
     height: 50px;
     overflow: hidden;
-    input{
-    width: 100%;
-    height: 100%;
-    color: $theme;
-    padding-top: 20px;
-    border:none;
-    outline: none;
+
+    input {
+        width: 100%;
+        height: 100%;
+        color: $theme;
+        padding-top: 20px;
+        border: none;
+        outline: none;
     }
-    
-    label{
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    pointer-events: none;
-    border-bottom: 1px solid black;
+
+    label {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+        border-bottom: 1px solid black;
     }
-    
-    label::after{
-    content: "";
-    position: absolute;
-    left: 0px;
-    bottom: -1px;
-    height: 100%;
-    width: 100%;
-    border-bottom: 3px solid $theme;
-    transform: translate(-100%);
+
+    label::after {
+        content: "";
+        position: absolute;
+        left: 0px;
+        bottom: -1px;
+        height: 100%;
+        width: 100%;
+        border-bottom: 3px solid $theme;
+        transform: translate(-100%);
     }
-    
-    input:focus + .label-name .content-name, input:valid + .label-name .content-name{
-    transform: translateY(-150%);
-    font-size: 14px;
-    color:$theme;
+
+    input:focus+.label-name .content-name,
+    input:valid+.label-name .content-name {
+        transform: translateY(-150%);
+        font-size: 14px;
+        color: $theme;
     }
-    
-    input:focus + .label-name::after,  input:valid + .label-name::after{
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
+
+    input:focus+.label-name::after,
+    input:valid+.label-name::after {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    .content-name {
+        position: absolute;
+        bottom: 5px;
+        left: 0px;
+        transition: all 0.3s ease;
+    }
 }
-    
-    .content-name{
-    position: absolute;
-    bottom: 5px;
-    left: 0px;
-    transition: all 0.3s ease;
-}
-}
 
-
-
-
-
-
-
-
-
-
-
-
-#submit{
+//end message
+#submit {
     position: relative;
     text-align: center;
     background-color: $theme;
     border-radius: 20px;
     left: 25rem;
-    top:5rem;
-    
-    &:hover{
+    top: 5rem;
+
+    &:hover {
         cursor: pointer;
         color: whitesmoke;
     }
 }
 
-#footer{
+#footer {
     position: relative;
     text-align: center;
     background-color: $theme;
     height: 10rem;
     top: 27rem;
-    
+
 }
 
-.github-icon{
+.github-icon {
     padding-right: 5rem;
 }
-a{
-   color: black;
-    
-    &:hover{
+
+a {
+    color: black;
+
+    &:hover {
         cursor: pointer;
         color: whitesmoke;
     }
 }
 
+.navbar-nav {
+    a:hover {
+        color: $theme !important;
+    }
+}
 
+.disabled {
+    cursor: default !important;
+}
+//phones
+@media only screen and (max-width: 700px) {
+    #submit{
+        position: relative;
+        left: 10rem;
+    }
+}
 
-
-
+//ipad
+@media only screen and (max-width: 768px) {
+    #footer{
+        top: 29rem;
+    }
+    #submit{
+        top: 14rem;
+    }
+}
+//ipad pro
+@media only screen and (max-width: 1024px) {
+    #footer{
+        top: 49.6rem;
+    }
+    #submit{
+        top: 25rem;
+        left: 28rem;
+    }
+}

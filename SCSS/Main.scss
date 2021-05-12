@@ -1,41 +1,43 @@
 $theme:slateblue;
 
 
-body{
-    font-family: 'Roboto','Open Sans', sans-serif;
+body {
+    font-family: 'Roboto', 'Open Sans', sans-serif;
 }
-.greeting{
+
+.greeting {
     font-size: 40px;
     font-weight: 600;
     text-align: center;
     height: 100px;
     padding: 10px;
-  
+
 }
 
-.greeting-items{
-    color:$theme;
+.greeting-items {
+    color: $theme;
 
 }
 
 .greeting-text {
-   padding: 3.5rem;
-   text-align: center;
+    padding: 3.5rem;
+    text-align: center;
 }
+
 .personal-greeting {
     text-align: center;
     background-color: $theme;
     height: 50rem;
-    
-    h2{
-  
-    padding: 2rem;
-    color: white;   
+
+    h2 {
+
+        padding: 2rem;
+        color: white;
     }
-  
+
 }
 
-.container{
+.container {
     padding-top: 20px;
     position: relative;
     top: -28rem;
@@ -44,22 +46,22 @@ body{
     border-radius: 25px;
     box-shadow: 2px 2px 0px 2px #F5F5F5;
     line-height: 3rem;
-    
+
 }
 
-ul{
-     list-style-type: none;
+ul {
+    list-style-type: none;
 }
 
-.interested{
+.interested {
     position: relative;
     text-align: center;
     top: -25rem;
-    
-   
+
+
 }
 
-#contact{
+#contact {
     margin-top: 2.5rem;
     position: relative;
     background-color: $theme;
@@ -70,55 +72,63 @@ ul{
     right: 7rem;
 }
 
-#view-projects{
+#view-projects {
     position: relative;
     background-color: $theme;
     border-radius: 20px;
     outline: none;
-     width: 7rem;
+    width: 7rem;
     height: 2rem;
     left: 7rem;
-    
+
 }
 
-#footer{
+#footer {
     text-align: center;
     background-color: $theme;
     height: 10rem;
 }
 
-.github-icon{
+.github-icon {
     padding-right: 5rem;
 }
-a{
-   color: black;
-    
-    &:hover{
+
+a {
+    color: black;
+
+    &:hover {
         color: whitesmoke;
     }
 }
 
 
-button:hover{
+button:hover {
     cursor: pointer;
     color: whitesmoke;
 }
 
-.disabled{
+.disabled {
     cursor: default;
 }
 
-@media only screen and (max-width: 700px){
-    .container{
+.navbar-nav {
+    a:hover {
+        color: $theme !important;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
         height: 100%;
         margin-top: 23rem;
     }
-   
-    #contact{
-        
+
+    #contact {
+
         left: 0.1rem;
     }
-    #view-projects{ 
+
+    #view-projects {
         left: 1rem;
     }
 }
