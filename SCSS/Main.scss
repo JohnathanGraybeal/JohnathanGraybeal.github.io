@@ -1,0 +1,124 @@
+$theme:slateblue;
+
+
+body{
+    font-family: 'Roboto','Open Sans', sans-serif;
+}
+.greeting{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    height: 100px;
+    padding: 10px;
+  
+}
+
+.greeting-items{
+    color:$theme;
+
+}
+
+.greeting-text {
+   padding: 3.5rem;
+   text-align: center;
+}
+.personal-greeting {
+    text-align: center;
+    background-color: $theme;
+    height: 50rem;
+    
+    h2{
+  
+    padding: 2rem;
+    color: white;   
+    }
+  
+}
+
+.container{
+    padding-top: 20px;
+    position: relative;
+    top: -28rem;
+    background-color: white;
+    height: 40rem;
+    border-radius: 25px;
+    box-shadow: 2px 2px 0px 2px #F5F5F5;
+    line-height: 3rem;
+    
+}
+
+ul{
+     list-style-type: none;
+}
+
+.interested{
+    position: relative;
+    text-align: center;
+    top: -25rem;
+    
+   
+}
+
+#contact{
+    margin-top: 2.5rem;
+    position: relative;
+    background-color: $theme;
+    border-radius: 20px;
+    outline: none;
+    width: 7rem;
+    height: 2rem;
+    right: 7rem;
+}
+
+#view-projects{
+    position: relative;
+    background-color: $theme;
+    border-radius: 20px;
+    outline: none;
+     width: 7rem;
+    height: 2rem;
+    left: 7rem;
+    
+}
+
+#footer{
+    text-align: center;
+    background-color: $theme;
+    height: 10rem;
+}
+
+.github-icon{
+    padding-right: 5rem;
+}
+a{
+   color: black;
+    
+    &:hover{
+        color: whitesmoke;
+    }
+}
+
+
+button:hover{
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+.disabled{
+    cursor: default;
+}
+
+@media only screen and (max-width: 700px){
+    .container{
+        height: 100%;
+        margin-top: 23rem;
+    }
+   
+    #contact{
+        
+        left: 0.1rem;
+    }
+    #view-projects{ 
+        left: 1rem;
+    }
+}
