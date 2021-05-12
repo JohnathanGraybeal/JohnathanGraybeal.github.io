@@ -2,27 +2,24 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Johnathan Graybeal personal portfolio site contact page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Johnathan Graybeal personal portfolio site">
     <meta name="author" content="Johnathan Graybeal">
     <meta name="last revised" content="5/12/21">
-    <title>Contact</title>
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./CSS/Contact.css">
-
-
+    <link rel="stylesheet" href="./CSS/Projects.css">
+    <title>Projects</title>
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -35,49 +32,46 @@
                     <a class="nav-link " href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Projects.html">Projects</a>
+                    <a class="nav-link disabled" href="#">Projects <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Contact <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="Contact.html">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
+    <h1>Projects</h1>
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="card">
+                        <img class="img-card" src="./images/sudoku.png" alt="sudoku puzzle">
 
-    <h1>Contact Me</h1>
+                        <div class="card-content">
+                            <h4 class="card-title">
+                                Sudoku Solver
 
-    <form accept-charset="utf-8" action="https://formspree.io/f/xoqyevzn" method="post">
-        <div class="form">
-            <div class="name">
-                <input type="text" name="_name" autocomplete="off" required>
-                <label for="name" class="label-name">
-                    <span class="content-name">Name</span></label>
-            </div>
+                            </h4>
+                            <p>
+                                Python project that solves any size sudoku puzzle given a valid xml file. It treats 0x0
+                                and 1xn as valid
+                                puzzles it will also try to solve and correct a puzzle if it isn't correctly
+                                configured<br>Image courtesy of
+                                (https://en.wikipedia.org/wiki/Sudoku)
+                            </p>
+                        </div>
+                        <div class="card-read-more">
+                            <a href="https://github.com/JohnathanGraybeal/SudokuSolver" class="btn btn-link btn-block">
+                                See The Code
+                            </a>
+                        </div>
+                    </div>
 
-            <div class="email">
-                <input type="email" name="_replyto" autocomplete="off" required>
-                <label for="email" class="label-name">
-                    <span class="content-name">Email</span></label>
-            </div>
-            <div class="company">
-                <input type="text" name="company" autocomplete="off" required>
-                <label for="company" class="label-name">
-                    <span class="content-name">Company</span></label>
-            </div>
-            <div class="role">
-                <input type="text" name="role" autocomplete="off" required>
-                <label for="role" class="label-name">
-                    <span class="content-name">Role</span></label>
-            </div>
-            <div class="message">
-                <input type="textarea" name="_message" autocomplete="off" required>
-                <label for="message" class="label-name">
-                    <span class="content-name">Message</span></label>
+                </div>
             </div>
         </div>
-        <input type="hidden" name="_subject" value="Website Contact Request">
-        <button id="submit" type="submit">Submit</button>
-    </form>
+    </div>
 
     <footer>
         <div id="footer">
@@ -105,5 +99,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
-
 </body>
+
+</html>
