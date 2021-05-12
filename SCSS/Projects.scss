@@ -84,7 +84,7 @@ h1 {
     text-align: center;
     background-color: $theme;
     height: 10rem;
-    top: 5rem;
+    top: 9rem;
 }
 
 .github-icon {
@@ -110,15 +110,16 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-    #footer{
+    #footer {
         top: 29rem;
     }
-   
+
 }
+
 //ipad pro
 @media only screen and (max-width: 1024px) {
-    #footer{
+    #footer {
         top: 49.6rem;
     }
-    
+
 }

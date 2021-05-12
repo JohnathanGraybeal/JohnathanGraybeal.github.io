@@ -356,9 +356,10 @@ a {
 .disabled {
     cursor: default !important;
 }
+
 //phones
 @media only screen and (max-width: 700px) {
-    #submit{
+    #submit {
         position: relative;
         left: 10rem;
     }
@@ -366,19 +367,22 @@ a {
 
 //ipad
 @media only screen and (max-width: 768px) {
-    #footer{
+    #footer {
         top: 29rem;
     }
-    #submit{
+
+    #submit {
         top: 14rem;
     }
 }
+
 //ipad pro
 @media only screen and (max-width: 1024px) {
-    #footer{
+    #footer {
         top: 49.6rem;
     }
-    #submit{
+
+    #submit {
         top: 25rem;
         left: 28rem;
     }
