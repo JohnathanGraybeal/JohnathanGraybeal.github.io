@@ -77,3 +77,10 @@ ul{
     background-color: slateblue;
     height: 10rem;
 }
+
+.github-icon{
+    padding-right: 5rem;
+}
+a{
+   color: black;
+}
